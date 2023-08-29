@@ -1,0 +1,676 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+     background-color: rgb(15, 13, 13);
+     overflow:auto;
+     scroll-behavior: smooth;
+}
+nav{
+    background-color:rgba(48, 47, 47, 0.989);
+     margin: 10px;
+     height: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+       padding: 9px;
+       display: flex;
+       justify-content: end;
+        align-items: center;
+}
+.explorebtn{
+     color:rgb(16, 15, 15);
+     list-style: none;
+     cursor: pointer;
+     margin-right: 20px;
+     background-color: #fff;
+     font-size: 17px;
+     width: 150px;
+     height: 30px;
+    padding-top: 8px;
+    padding-left: 37px;
+    border-radius: 20px;
+    
+    
+}
+
+.payment{
+    position:  absolute;
+      width: 500px;
+      height: 550px;
+      background-color:white;
+      display:none;
+      flex-direction: column;
+      box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 25px;
+      z-index: 1;
+      border-bottom-right-radius: 20px;
+       top: 30px;
+     }
+     .close{
+    position: absolute;  
+    color: white;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 5px;
+    cursor: pointer;
+}
+.checkout{
+     position: absolute;
+     bottom: 0px;
+     background-color:green;
+     width: 500px;
+     height: 35px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-bottom-right-radius: 20px;
+     cursor: pointer;
+
+}
+.paytitle{
+     background-color:black;
+     color: white;
+     padding: 5px;
+    
+}
+lable{
+    font-size: 20px;
+     margin: 5px;
+}
+.payinput{
+     height: 25px;
+     width:400px;
+     border: none;
+     border-bottom: 2px solid black;
+     margin-left: 5px;
+     border-radius: 10px;
+     padding: 3px;
+     outline: none;
+
+}
+.cardtitle{
+     margin:40px 0px 20px 10px;
+     font-size: 30px;
+     background-color: black;
+     color: white;
+     font-weight: 500;
+}
+.master{
+     width: 30px;
+     height: 30px;
+}
+.visa{
+    width: 30px;
+    height: 30px;
+}
+.payinputsm{
+     width: 50px;
+     height: 30px;
+     margin: 10px;
+}
+
+nav ul li:hover{
+   width: 155px; 
+   height: 32px;
+   font-size: 18px;
+}
+ .explor-premium{
+     background:linear-gradient(135deg,rgba(18, 60, 185, 0.242),rgb(37, 4, 35),rgba(171, 181, 24, 0.456));
+
+       width: 100%vw;
+       height: 700px;
+       display: none;
+       justify-content: center;
+       align-items: center;
+       position:relative;
+       margin: 20px;
+       border-radius: 20px;
+
+      
+ }
+  .cancel{
+     position:absolute;
+      top: 10px;
+      right:60px;
+      background-color:black;
+      color: white;
+      width: 18px;
+      height: 20px;
+      padding-left: 6px;
+      cursor: pointer;
+  }
+ .block1{
+      width: 300px;
+      height: 400px;
+      background:linear-gradient(135deg,rgba(95, 150, 205, 0.297),rgb(6, 78, 202));
+     
+      margin: 10px;
+      border:3px solid grey;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      }
+      .block1:hover{
+        box-shadow: rgba(228, 223, 223, 0.35) 10px 5px 15px;
+        width: 304px;
+        height: 404px;
+        
+      }
+    
+    .block2{
+        width: 300px;
+        margin: 10px;
+        height: 400px;
+        background:linear-gradient(135deg,rgba(189, 106, 192, 0.297),rgb(222, 10, 218));
+
+        border:2px solid grey;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+     .block2:hover{
+        box-shadow: rgba(234, 219, 219, 0.35) 10px 5px 15px;
+        width: 304px;
+        height: 404px;
+     }
+    .block3{
+     margin: 10px;
+      width: 300px;
+      height: 400px;
+      background:linear-gradient(135deg,rgba(215, 209, 89, 0.297),rgb(210, 216, 37));
+      border:2px solid grey;
+     border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    .block3:hover{
+        box-shadow: rgba(223, 213, 213, 0.35) 15px 10px 20px;
+        width: 304px;
+        height: 404px;
+        
+     }
+     .tag{
+         font-size:30px;
+         margin:10px 0px 10px 10px;
+         background-color:black;
+         color: white;
+         padding:7px 0px 7px 10px;
+         border-radius: 10px;
+
+     }
+     .price{
+         font-size: 40px;
+         margin:50px;
+     }
+     .para{
+          font-size: 25px;
+     }
+
+     .pay{
+           background-color: black;
+           color: white;
+           font-size: 25px;
+            margin: 50px 0px 0px 0px;
+            height: 54px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+       }
+.heading1{
+    /* background-color:rgb(62, 57, 57); */
+    color: rgb(244, 242, 242);
+    height: 50px;
+    margin:5px;
+    font-size: 30px;
+    font-weight:900;
+    display: flex;
+     justify-content: left;
+      align-items: center;
+
+}
+.heading2{
+    color:rgb(242, 239, 239);
+    height: 50px;
+    margin:30px 0px 30px 10px;
+    font-size: 30px;
+    font-weight:400;
+    display: flex;
+     justify-content: left;
+      align-items: center; 
+}
+
+.uppersong{
+          overflow: hidden;
+          display: grid;
+         grid-template-columns:auto auto auto ; 
+           gap: 10px 0px;  
+        
+}
+
+.uppersongplaylist{
+     width: 550px;
+     height: 700px;
+     background-color:black;
+     margin: 10px 10px 5px 485px;
+     border-radius: 10px;
+     display:none;
+     flex-direction: column;
+     position:relative;
+     cursor: pointer;box-shadow: rgba(209, 205, 205, 0.25) 0px 54px 55px, rgba(220, 219, 219, 0.12) 0px -12px 30px, rgba(220, 216, 216, 0.12) 0px 4px 6px, rgba(212, 212, 212, 0.17) 0px 12px 13px, rgba(230, 229, 229, 0.09) 0px -3px 5px;
+     
+}
+.uppersongplayclose{
+      position:absolute;
+      top: 10px;
+       right: 20px;
+       background-color:black;
+       color: white;
+       width: 20px;
+       height: 20px;
+       padding-left: 7px;
+       cursor: pointer;
+}
+.uppersongplaylistfont{
+        height: 100px;
+      display: flex;
+      justify-content: center;
+      margin:20px 200px 20px 200px;
+      border-radius: 10px;
+      color: white;
+      font-size: 30px;
+
+} 
+ .uppersongplaylistfontdiv{
+     background:linear-gradient(180deg,rgba(252, 14, 14, 0.500),black);
+
+}
+/* .uppersongplay{
+       position:relative;
+       display: flex;
+       flex-direction: column;
+} */
+  .soon{
+        font-size: 25px;
+        margin: 5px;
+   }
+.song{
+     
+      background-color:rgb(48, 46, 46);
+      color: rgb(190, 178, 178); 
+       width: 280px;
+       height:60px;
+       font-size: 15px;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        border-radius: 10px;
+        margin: 10px 0px 10px 25px;
+    
+}
+
+.songimg{
+      width: 50px;
+      height: 50px;
+       border-radius: 10px;
+}
+.songtag{
+      font-size: 17px;
+}
+
+.icons{
+     position: sticky;
+     top: 92vh;
+     bottom:0px;
+    color: rgb(28, 23, 23);
+  display:none;
+  justify-content: center;
+   align-items: center;
+    height: 55px;
+   background-color: rgb(58, 53, 53);
+     z-index: 1;
+     width: 550px;
+     left :485px;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+
+}
+/* .cor{
+      width: 40px ;
+      height: 200px;
+      background-color: #fff;
+} */
+.range{
+      width: 400px;
+      margin: 10px;
+
+}
+.bcimage1{
+      background-color:#4b4848;
+      width:500px;
+      height:120px; 
+      border-radius: 10px;
+      display: flex;
+}
+
+.image1{
+      display: flex;
+       margin: 10px;
+       
+}
+ .bcimage1:hover{
+     background-color:black;  
+ }
+
+.paratop{
+      font-size: 25px;
+       margin: 35px;
+       color: #fff;
+}
+.made-for-you{
+    margin-left: 50px;
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      gap: auto;
+      overflow: hidden;
+}
+ .imagetitle{
+      height: 240px;
+      background-color: #221f1f;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      
+} 
+.image2:hover{
+     width: 190px;
+     height: 192px;
+     cursor: pointer;
+     box-shadow: rgba(192, 179, 179, 0.56) 0px 0px 4px 4px;
+
+}
+.h1{
+     color: white;
+     margin-top: 5px;
+     font-size:20px;
+     font-weight: 600;
+     display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.h2{
+     color: rgb(167, 159, 159);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+.heading3{
+    color: rgb(241, 234, 234);
+    height: 50px;
+    margin:30px 0px 30px 10px;
+    font-size: 30px;
+    font-weight:400;
+    display: flex;
+     justify-content: left;
+      align-items: center;
+     
+}
+
+.Fresh-new-song{
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap:auto;    
+    
+}
+
+.heading4{
+     color: rgb(241, 234, 234);
+     height: 50px;
+     margin:30px 0px 30px 10px;
+     font-size: 30px;
+     font-weight:400;
+     display: flex;
+      justify-content: left;
+       align-items: center;
+      
+ }
+.best-of-artists{
+    margin-left:50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: auto;
+     
+}
+ .unablesong{
+       width: 100vw;
+       height: 750px;
+       background:linear-gradient(135deg,rgba(15, 29, 58, 0.5),black);
+       display:none;
+       justify-content: center;
+       align-items: center;
+       position: relative;
+          
+ }
+  .unablesongfont{
+      font-size: 40px;
+       color: rgb(225, 223, 223);
+      
+      
+  }
+.unablesongclose{
+       position:absolute;
+       color: white;
+       top: 20%;
+       right: 20%; 
+       cursor: pointer;
+
+}
+
+
+/* nnnnnaknaddnvvnkjnsfnmnakncm,admanajnfjnfddnfmamdnfjkenfdnadmnkanffnknefdnfnmnkj */
+@media screen  and (max-width:499px){
+     .explorebtn{
+           width: 100px;
+           height: 25px;
+           padding-left:5px;
+           font-size:13px;
+           font-weight: 500;
+     }  
+    .unablesong{
+        width: 330px;
+        height: 650px;
+        margin: 0px 0px 0px 25px;
+
+    }
+    .unablesongfont{
+     font-size: 40px; 
+     
+ }
+ .unablesongclose{
+    
+     top: 20px;
+     right: 30px; 
+     
+
+}
+ 
+      .payment{
+           width: 350px;
+           height: 550px;
+           top: 0px;
+      }
+      .checkout{
+           width:350px ;
+           height: 30px;
+      }
+      lable{
+           font-size: 15px;
+      }
+      .payinput{
+           width: 320px;
+      }
+      .close{
+          width: 15px;
+          height: 15px; 
+           top: 10px;
+      }
+      .paytitle{
+           font-size:25px;
+      }
+     .explor-premium{
+               display:none;
+                flex-direction: column;
+                height:900px;  
+          }
+      .block1{
+           width: 200px;
+           height: 250px;
+      }
+      .block2{
+           width: 200px;
+           height: 250px;
+      }
+      .block3{
+           width: 200px;
+           height: 250px;
+      }
+
+      .uppersongplaylist{
+          width: 330px;
+          height: 700px;
+          background-color: black;
+          margin: 10px 10px 20px 20px;
+          border-radius: 10px;
+          display: none;
+          flex-direction: column;
+      }
+      .tag{
+           font-size: 20px;
+      }
+      .price{
+           font-size: 30px;
+           margin: 30px;
+      }
+      .para{
+          font-size: 15px; 
+      }
+      .pay{
+            font-size: 20px;
+            margin: 15px 0px 0px 0px;
+            
+      }
+     .heading1{
+           font-size: 25px;
+     }
+     .image1{
+           width:50px;
+           height: 50px;
+           margin: 5px;
+           
+     }
+
+     .bcimage1{
+        
+           width: 150px;
+           height: 60px;
+           margin-top: 4px;
+           cursor: pointer;
+           
+     }
+     
+     .paratop{
+        font-size: 15px;
+        margin:18px 0px 7px 10px ;   
+     }
+     .uppersong{
+          display:grid;
+          grid-template-columns: auto auto ;
+          margin:0px 10px 0px 35px;
+     }
+     .heading2{
+           margin: 10px;
+     }
+     .image2{
+           width:80px;
+           height: 80px;
+     }
+     .h1{
+           font-size:14px;
+           /* display: flex;
+           justify-content: center;
+           align-items: center; */
+
+     }
+     .h2{
+           font-size: 10px;
+           /* display: flex;
+           justify-content: center;
+           align-items: center; */
+     }
+     .made-for-you{
+           margin: 7px 10px 0px 10px;
+           display: grid;
+           grid-template-columns: auto auto auto;
+          }
+          .imagetitle{
+               width:95px ;
+               height:140px ;
+               margin:7px 7px 7px 13px;
+          }
+          .heading3{
+               margin: 10px; 
+          }
+          
+          .Fresh-new-song{
+               
+               margin: 7px 10px 0px 10px;
+               display: grid;
+               grid-template-columns: auto auto auto;
+          }
+          .heading4{
+               margin: 10px; 
+          }
+           
+          .best-of-artists{
+               margin: 7px 10px 0px 10px;
+               display: grid;
+               grid-template-columns: auto auto auto;
+               
+          }
+         .icons{
+           position: sticky;
+           top:92vh;
+           width: 330px;
+           left: 20px;
+           border-bottom-left-radius: 10px;
+           border-bottom-right-radius: 10px;
+
+           /* bottom:10px; */
+          
+         }
+         .range{
+            width: 200px;
+     
+         }
+           
+           .uppersongplaylistfontdiv{
+                border-radius: 10px;
+           }
+         .uppersongplaylistfont{
+            margin: 40px 0px 0px 30px;
+           
+         }
+           
+          
+       
+     }       
